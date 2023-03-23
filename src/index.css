@@ -52,13 +52,14 @@ body{
 }
 
 .logo{
-	background: linear-gradient(90deg, #03228f, 10px, #0e73e4 100% );
+	background: linear-gradient(90deg, #123f64be, 10px, #6f9dd1 100% );
 	width: 40px;
 	height: 40px;
 	border-radius: 300px;
 	margin-top: 30px;
 
 }
+
 /*Estilos barra de navegacion*/
 .nav{
 	grid-area: nav;
@@ -89,6 +90,7 @@ body{
 
 .nav a:hover{
 	transform: scale(1.2, 1.2) ;
+	color: #06ABC2;
 }
 
 /*Estilo para contenido en general*/
@@ -96,9 +98,9 @@ body{
 	grid-area: content;
 	background: #f6f7f9;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: flex-start;
-	align-items: flex-start;
+	align-items: initial;
 }
 
 .articulo-item{
@@ -111,7 +113,23 @@ body{
 	padding-bottom: 60px;
 	padding-left: 25px;
 	padding-right: 25px;
+	text-align: left;
+	max-height: 225px;
+	display: flex;
 }
+.articulo-item .mask{
+	width: 20%;
+	overflow: hidden;
+	margin-right: 40px;
+}
+.articulo-item .mask img{
+	width: 100%;
+}
+
+.articulo-item h3{
+	font-size: 20px;
+}
+
 
 .jumbo{
 	width: 85%;
@@ -155,7 +173,12 @@ input[type="button"]{
 
 
 .button:hover{
-	background: #06ABC2 ;
+	background: #06ABC2;
+}
+
+.articulo-item .edit{
+	margin-right: 20px;
+
 }
 
 
@@ -235,6 +258,6 @@ input[type="button"]{
     }
 
     .articulo-item{
-        width: 80%;
+        width: 85%;
     }
 }
