@@ -14,7 +14,7 @@ export const Articulos = () => {
 
   const conseguirArticulos = async () => {
 
-    const { datos, cargando } = await Peticion(Global.url + "articulos", { method: 'PUT' })
+    const { datos, cargando } = await Peticion(Global.url + "articulos", { method: 'GET' })
 
 
     if (datos.status === "success") {
