@@ -63,21 +63,25 @@ export const Crear = () => {
         <div className='form-group'>
           <label htmlFor='titulo'>Titulo</label>
           <input type="text" name="titulo" onChange={cambiado}></input>
+        </div>
 
+        <div className='form-group'>
+          <label htmlFor='descripcion'>Descripcion</label>
+          <input type="text" name="descripcion" onChange={cambiado}></input>
         </div>
         
         <div className='form-group'>
-          <label htmlFor='contenido'>contenido</label>
+          <label htmlFor='contenido'>Contenido</label>
           <textarea type="text" name="contenido" onChange={cambiado}></textarea>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='autor'>autor</label>
+          <label htmlFor='autor'>Autor</label>
           <input type="text" name="autor" onChange={cambiado}></input>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='file0'>imagen</label>
+          <label htmlFor='file0'>Imagen</label>
           <input type="file" name="file0" id='file'></input>
         </div>
 

@@ -88,6 +88,11 @@ export const Editar = () => {
         </div>
 
         <div className='form-group'>
+          <label htmlFor='descripcion'>descripcion</label>
+          <input type="text" name="descripcion" onChange={cambiado} defaultValue={articulo.descripcion}></input>
+        </div>
+
+        <div className='form-group'>
           <label htmlFor='contenido'>contenido</label>
           <textarea type="text" name="contenido" onChange={cambiado} defaultValue={articulo.contenido}></textarea>
         </div>

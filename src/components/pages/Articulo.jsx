@@ -44,7 +44,6 @@ export const Articulo = () => {
             <h1>{articulo.titulo}</h1>
             <span>{articulo.fecha}</span>
             <p>{articulo.contenido}</p>
-
           </>
         )
       }

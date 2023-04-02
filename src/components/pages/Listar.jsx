@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Global } from '../../helpers/Global';
 import { Peticion } from '../../helpers/Peticion';
 
@@ -26,11 +26,13 @@ export const Listar = ({articulos,setArticulos}) => {
              </div>
             <div className='datos'>
               <h3 className="title"><Link to={"/articulo/"+articulo._id}>{articulo.titulo}</Link></h3>
-              <p className="description">{articulo.contenido}</p>
-              <h3 className='autor'>{articulo.autor}</h3>
+              <p className="description">{articulo.descripcion}</p>
+              <h3 className='autor'>{articulo.autor}</h3>             
 
               <Link to={"/editar/"+articulo._id} className="edit">Editar</Link>
+              
               <button className="delete" onClick={()=>{eliminar(articulo._id)}}>Eliminar</button>
+              <Link to={"/articulo/"+articulo._id} className="edit">Leer Articulo</Link>
             </div>
           </article>
         );

@@ -21,8 +21,7 @@ body{
 		"footer footer footer footer"
 	;
 	grid-template-rows: 100px 70px auto 70px;
-	grid-template-rows: 1fr 1fr 1fr 25%x;
-
+	grid-template-columns: 1fr 1fr 1fr 25%;
 }
 
 /*Estilos Cabecera*/
@@ -154,6 +153,7 @@ body{
 .jumbo p{
 	display: block;
 	margin-bottom: 40px;
+
 }
 
 .jumbo .mask{
@@ -176,7 +176,25 @@ body{
 .button,
 button,
 input[type="submit"],
-input[type="button"],
+input[type="button"]{
+	text-decoration: none;
+	width: 100px;
+	background:#9aaec5;
+	color: white;
+	border: 0;
+	outline: 0;
+	padding: 15px;
+	border-radius: 9px;
+	margin-top: 15px;
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 300ms;
+	margin-right: 4px;
+
+}
+
 .edit{
 	text-decoration: none;
 	width: 100px;
@@ -185,13 +203,14 @@ input[type="button"],
 	border: 0;
 	outline: 0;
 	padding: 15px;
-	border-radius: 10px;
+	border-radius: 9px;
 	margin-top: 15px;
 	text-transform: capitalize;
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;
 	transition: all 300ms;
+	margin-left: 10px;
 
 }
 
@@ -209,7 +228,6 @@ input[type="button"],
 
 }
 
-
 .articulo-item .edit:hover {
 	background: #EA9280;
 
@@ -219,13 +237,13 @@ input[type="button"],
 
 }
 
-
 /*estilos barra lateral*/
 .lateral{
 	grid-area: lateral;
 	background: #f6f7f9;
 	border-left: 1px solid #ddd;
 	padding: 20px;
+	min-height: 490px;
 }
 
 .lateral > div{
