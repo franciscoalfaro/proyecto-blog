@@ -6,8 +6,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
     "preview": "vite preview --port 8080",
     "host":"vite --host"
+=======
+    "preview": "vite preview",
+    "host":"vite --host",
+    "develop": "concurrently \"react-scripts start\" \" nodemon ./src/services/server.js\"",
+    "start": "concurrently \"react-scripts start\" \" node ./src/services/server.js\"",
+    "build": "CI=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "seeds": "node ./src/services/seeds/index.js"
+>>>>>>> 27c41284c575085a14fbe49c92b9f390e49be898
 
   },
   "dependencies": {
@@ -23,4 +34,7 @@
   }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27c41284c575085a14fbe49c92b9f390e49be898
