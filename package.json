@@ -13,7 +13,13 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.9.0"
+    "react-router-dom": "^6.9.0",
+    "develop": "concurrently \"react-scripts start\" \" nodemon ./src/services/server.js\"",
+    "start": "concurrently \"react-scripts start\" \" node ./src/services/server.js\"",
+    "build": "CI=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "seeds": "node ./src/services/seeds/index.js"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
