@@ -1,4 +1,4 @@
 export const Global =  {
-    url:"http://ec2-18-219-218-242.us-east-2.compute.amazonaws.com:3000/api/"
+    url:"http://3.142.80.33:3000/api/"
 
 }
