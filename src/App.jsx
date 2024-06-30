@@ -1,7 +1,3 @@
-import { useState } from 'react'
-import { Articulos } from './components/pages/Articulos'
-import { Inicio } from './components/pages/Inicio'
-import './App.css'
 import { Rutas } from './routing/Rutas'
 
 function App() {
