@@ -36,7 +36,7 @@ export const Peticion = async (url, metodo, datosGuardar = "", archivos=false) =
 
     cargando = false
 
-    console.log(datos)
+
 
 
 

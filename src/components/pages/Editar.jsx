@@ -34,7 +34,7 @@ export const Editar = () => {
 
     //recorger datos del formulario
     let nuevoArticulo = formulario
-    console.log(nuevoArticulo)
+
 
     //guardar datos en el backen
     const { datos } = await Peticion(Global.url + "articulo/"+params.id, "PUT", nuevoArticulo);
@@ -57,7 +57,7 @@ export const Editar = () => {
       formData.append('file0', fileInput.files[0])
 
       const { subida } = await Peticion(Global.url + "subir-imagen/" + datos.articulo._id, "POST", formData, true);
-      console.log(subida)
+  
 
       if (subida.datos.status === "success") {
         setResultado("guardado")

@@ -26,7 +26,7 @@ export const Articulo = () => {
 
     }
     setCargando(false);
-    console.log(articulo)
+
 
   }
 
